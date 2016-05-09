@@ -51,8 +51,34 @@ In this project, I was provided with a web portfolio and had to optimize it in o
 - `gulp-csso`
 - `gulp-uglify`
 
-**modification** of `.js` files:
-- Moved the computation of `document.body.scrollTop` outside of the `for-loop` construct so that it gets computed once once each time `updatePositions()` is called.
+**modification** of `views/main.js`:
+
+-**Line 508**: Moved the computation of `document.body.scrollTop` outside of the `for-loop` construct so that it gets computed once once each time `updatePositions()` is called.
+
+-**Line 410, 413, 416, 428**: Used `getElementById()` instead of `querySelector()` because it is faster.
+
+-**Line 456**: Stored the array length in a local variable so that the length property is not repeatedly accessed at each iteration
+
+-**Line 455, 456**: Used document.`getElementsByClassName()` instead of `document.querySelectorAll()` because it is faster.
+
+-**Line 454 and 455**: Moved `newwidth` and `dx` variables out of the loop.
+
+-**Line 457**: Saved `document.getElementsByClassName('randomPizzaContainer')` outside of the loop so that the DOM is not explicitly touched at each iteration.
+
+-**Line 473**: Declared `pizzasDiv` outside of the loop in order to limit the number of DOM calls.
+
+-**Line 505**: Moved the scrollTop variable out of the for-loop construct so that it does not gets computed at each iteration.
+
+-**Line 506**: Used document.`getElementsByClassName()` instead of `document.querySelectorAll()` because it is faster.
+
+-**Line 507**: Moved the variable 'phase' declaration out of the loop so it does not get created every time the loop is executed.
+
+-**Line 531**: Reduced the number of background pizzas from `200` to `24`, a multiple of the current `cols` value.
+
+
+-**Line 530**: Moved the variable 'elem' declaration out of the loop so it does not get created every time the loop is executed.
+
+-**Line 539**: Used document.`getElementById()` instead of `document.querySelector()` because it is faster.
 
 ### Automation Tool 
 - In order to automate most of these tasks, the automation tool **gulp** was used.
