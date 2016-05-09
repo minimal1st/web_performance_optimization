@@ -13,7 +13,7 @@ In this project, I was provided with a web portfolio and I had to optimize it in
 - Uglification of JavaScript files [using gulp-uglify]
 - Compression and optimal resizing of images [using gulp-imagemin]
 - Modification of js functions [manually]
-- Use of the async attribute in <script> tags. [manually]
+- Use of the async attribute in '<script>' tags. [manually]
 
 ### Automation Tool 
 - In order to automate most of these tasks, the automation tool 'gulp' was used.
