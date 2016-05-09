@@ -5,7 +5,7 @@
 ### Description of the Project
 In this project, I was provided with a web portfolio and I had to optimize it in order to achieve **60 frames per second** and a **PageSpeed score of 90**. In order to achieve this goal, a number of **optimization tricks** were used.
 
-### Optimization tricks used
+### Optimization tricks and tools used
 - **Minification** of HTML files [using gulp-htmlmin]
 - **Minification** of CSS files [using gulp-clean-css]
 - **Inlining** of CSS files [manually]
@@ -15,8 +15,44 @@ In this project, I was provided with a web portfolio and I had to optimize it in
 - **Modification** of js functions [manually]
 - Use of the **async** attribute in \<script> tags. [manually]
 
+### Optimization details
+**manual resizing** applied to:
+- `pizzeria.jpg` to width of 100px
+
+**cleancss** and **csso** applied to:
+- `css/style.css`
+- `css/print.css`
+
+**manual inling** applied to: 
+- `css/style.css`
+
+**uglify** applied to:
+- `js/perfmatters.js`
+
+**htmlmin** applied to:
+- `project-2048.html`
+- `project-mobile.html`
+- `project-webperf.html`
+- `views/pizza.html`
+- `index.html`
+
+**imagemin** applied to:
+- `img/2048.png`
+- `img/cam_be_like.jpg`
+- `img/mobilewebdev.jpg`
+- `img/profilepic.jpg`
+- `views/images/pizzeria.jpg`
+
+**gulp** plugins used:
+- `gulp-imagemin`
+- `gulp-htmlmin`
+- `gulp-clean-css`
+- `gulp-uncss`
+- `gulp-csso`
+- `gulp-uglify`
+
 ### Automation Tool 
-- In order to automate most of these tasks, the automation tool 'gulp' was used.
+- In order to automate most of these tasks, the automation tool **gulp** was used.
 
 ### Building the 'dist' directory
 - In order to launch gulp which will perform most of the tasks previously mentioned, simply type `gulp`, which will run the default task in gulpfile.js, which includes all the other tasks. **gulp** can be installed using the npm package manager.
