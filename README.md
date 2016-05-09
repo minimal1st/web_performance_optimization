@@ -6,20 +6,20 @@
 In this project, I was provided with a web portfolio and I had to optimize it in order to achieve 60 frames per second and a PageSpeed score of 90. In order to achieve this goal, a number of optimization tricks were used.
 
 ### Optimization tricks used
-- Minification of HTML files [using gulp-htmlmin]
-- Minification of CSS files [using gulp-clean-css]
-- Inlining of CSS files [manually]
-- Removal of unused CSS selectors [using gulp-uncss]
-- Uglification of JavaScript files [using gulp-uglify]
-- Compression and optimal resizing of images [using gulp-imagemin]
-- Modification of js functions [manually]
-- Use of the async attribute in \<script> tags. [manually]
+- **Minification** of HTML files [using gulp-htmlmin]
+- **Minification** of CSS files [using gulp-clean-css]
+- **Inlining** of CSS files [manually]
+- **Removal** of unused CSS selectors [using gulp-uncss]
+- **Uglification** of JavaScript files [using gulp-uglify]
+- **Compression** and optimal resizing of images [using gulp-imagemin]
+- **Modification** of js functions [manually]
+- Use of the **async** attribute in \<script> tags. [manually]
 
 ### Automation Tool 
 - In order to automate most of these tasks, the automation tool 'gulp' was used.
 
 ### Building the 'dist' directory
-- In order to launch gulp which will perform most of the tasks previously mentioned, simply type `gulp`, which will run the default task in gulpfile.js, which includes all the other tasks. *gulp* can be installed using the npm package manager.
+- In order to launch gulp which will perform most of the tasks previously mentioned, simply type `gulp`, which will run the default task in gulpfile.js, which includes all the other tasks. **gulp** can be installed using the npm package manager.
 
 ### License 
 
