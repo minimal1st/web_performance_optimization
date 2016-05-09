@@ -51,7 +51,7 @@ In this project, I was provided with a web portfolio and had to optimize it in o
 - `gulp-csso`
 - `gulp-uglify`
 
-** modification of `.js` files:
+**modification** of `.js` files:
 - Moved the computation of document.body.scrollTop outside of the `for-loop` construct so that it gets computed once once each time updatePositions() is called.
 
 ### Automation Tool 
