@@ -19,7 +19,7 @@ In this project, I was provided with a web portfolio and I had to optimize it in
 - In order to automate most of these tasks, the automation tool 'gulp' was used.
 
 ### Building the 'dist' directory
-- In order to launch gulp which will perform most of the tasks previously mentioned, simply type 'gulp', which will run the default task in gulpfile.js, which includes all the other tasks.
+- In order to launch gulp which will perform most of the tasks previously mentioned, simply type `gulp`, which will run the default task in gulpfile.js, which includes all the other tasks. *gulp* can be installed using the npm package manager.
 
 ### License 
 
