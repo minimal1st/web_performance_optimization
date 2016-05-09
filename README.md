@@ -3,7 +3,7 @@
 ## Web Performance Optimization Project
 
 ### Description of the Project
-In this project, I was provided with a web portfolio and I had to optimize it in order to achieve 60 frames per second and a PageSpeed score of 90. In order to achieve this goal, a number of optimization tricks were used.
+In this project, I was provided with a web portfolio and I had to optimize it in order to achieve **60 frames per second** and a **PageSpeed score of 90**. In order to achieve this goal, a number of **optimization tricks** were used.
 
 ### Optimization tricks used
 - **Minification** of HTML files [using gulp-htmlmin]
